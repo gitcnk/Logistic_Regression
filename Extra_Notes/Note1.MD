@@ -51,7 +51,7 @@ $\text{OR per year} = e^{0.05} \approx 1.05$
 
 
 **Interpretation**:  
-When comparing patients with the same risk level, a one difference in age year of age **increases the odds of disease by about 5%**, 
+When comparing patients with the same risk level, a one year difference in age corresponds to an **change in odds by a factor of 1.05%**.  i.e. Not a huge 'impact'. 
 
 ---
 
