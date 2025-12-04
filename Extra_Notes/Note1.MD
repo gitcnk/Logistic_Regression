@@ -23,35 +23,35 @@ Suppose we fit the model and get:
 
 | Coefficient | Estimate |
 |------------|----------|
-| Intercept ($beta_0$) | -3.0 |
-| Risk (\(\beta_1\))      | 1.5  |
-| Age (\(\beta_2\))       | 0.05 |
+| Intercept ($\beta_0$) | -3.0 |
+| Risk ($\beta_1$)      | 1.5  |
+| Age ($\beta_2$)       | 0.05 |
 
 ---
 
 ## Interpreting Coefficients
 
 ### Risk Factor (Binary)
-- \(\beta_1 = 1.5\)  
+- $\beta_1 = 1.5$  
 - **Odds ratio (OR)**:
 
-\[
-\text{OR} = e^{\beta_1} = e^{1.5} \approx 4.48
-\]
+
+$\text{OR} = e^{\beta_1} = e^{1.5} \approx 4.48$
+
 
 **Interpretation**:  
-People with the risk factor have about **4.5 times higher odds** of disease than people without the risk factor, **holding age constant**.
+Among people with same Age, those with the risk factor have about **4.5 times higher odds** of disease than people without the risk factor
 
 ### Age (Continuous)
-- \(\beta_2 = 0.05\)  
-- **OR per year increase**:
+- $\beta_2 = 0.05$ 
+- **OR for a one year increase**:
 
-\[
-\text{OR per year} = e^{0.05} \approx 1.05
-\]
+
+$\text{OR per year} = e^{0.05} \approx 1.05$
+
 
 **Interpretation**:  
-Each additional year of age **increases the odds of disease by about 5%**, holding risk factor constant.
+When comparing patients with the same risk level, a one difference in age year of age **increases the odds of disease by about 5%**, 
 
 ---
 
@@ -72,11 +72,6 @@ Each additional year of age **increases the odds of disease by about 5%**, holdi
 | 1    | 80  | 0.924      | 12.182|
 | 1    | 85  | 0.946      | 17.444|
 
-**Notes**:
-
-- Probability rises with age for both risk groups.  
-- Having the risk factor shifts the probability curve upward.  
-- At very high ages, probabilities approach 1, especially for Risk = 1.
 
 ---
 
@@ -86,24 +81,17 @@ For someone with **Risk = 1** and **Age = 50**:
 
 1. Compute log-odds:
 
-\[
-\text{log-odds} = -3 + 1.5 \cdot 1 + 0.05 \cdot 50 = 1.0
-\]
+
+$\text{log-odds} = -3 + 1.5 \cdot 1 + 0.05 \cdot 50 = 1.0$
+
 
 2. Convert to probability:
 
-\[
-p = \frac{e^{1.0}}{1 + e^{1.0}} = \frac{2.718}{1 + 2.718} \approx 0.731
-\]
+
+$p = \frac{e^{1.0}}{1 + e^{1.0}} = \frac{2.718}{1 + 2.718} \approx 0.731 $
+
 
 So this person has a **73% chance of disease**.
 
 ---
 
-## Summary
-
-- Logistic regression models the **log-odds** of an event.  
-- **Exponentiating coefficients gives odds ratios**, which are easier to interpret.  
-- Continuous predictors: OR = change in odds per unit increase.  
-- Binary predictors: OR = multiplicative change in odds compared to reference category.  
-- Use predicted probabilities to **illustrate effects visually** for students.
