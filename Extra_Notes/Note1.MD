@@ -15,9 +15,7 @@ We want to model the probability of disease as a function of these predictors.
 
 The logistic regression model is:
 
-$
-\log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 \text{Risk} + \beta_2 \text{Age}
-$
+$\log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 \text{Risk} + \beta_2 \text{Age}$
 
 where $(p = P(\text{Disease} = 1 \mid \text{Risk, Age})\).$
 
