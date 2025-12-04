@@ -1,6 +1,6 @@
-# Logistic Regression Teaching Handout
+# Logistic Regression Example
 
-## Scenario Example
+
 We are studying whether people develop a certain disease (Disease = 1 if yes, 0 if no).  
 We have two predictors:
 
@@ -15,17 +15,17 @@ We want to model the probability of disease as a function of these predictors.
 
 The logistic regression model is:
 
-\[
+$
 \log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 \text{Risk} + \beta_2 \text{Age}
-\]
+$
 
-where \(p = P(\text{Disease} = 1 \mid \text{Risk, Age})\).
+where $(p = P(\text{Disease} = 1 \mid \text{Risk, Age})\).$
 
 Suppose we fit the model and get:
 
 | Coefficient | Estimate |
 |------------|----------|
-| Intercept (\(\beta_0\)) | -3.0 |
+| Intercept ($beta_0$) | -3.0 |
 | Risk (\(\beta_1\))      | 1.5  |
 | Age (\(\beta_2\))       | 0.05 |
 
