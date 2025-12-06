@@ -76,4 +76,5 @@ $\text{highwage} \sim \text{sex} + \text{age} + \text{education}$
 2. Convert these probabilities into predicted classes using a threshold of **0.5**.
 3. Create our famous 'going-to-the-beach' table!
 
+**Congratulations!**  You just finished the last HW for the semeseter!
 ---
