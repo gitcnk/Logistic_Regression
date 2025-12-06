@@ -49,31 +49,20 @@ Your goal: Build and interpret logistic regression models predicting whether a w
 
 Fit the model:
 
-\[
+$
 \text{highwage} \sim \text{sex}
-\]
+$
 
-**Tasks**
 
-1. Fit the logistic regression model using train data.
-2. Interpret the coefficient for `sexFemale`:
-   - On the log-odds scale  
-   - Convert to an odds ratio  
-   - Interpret the odds ratio in plain language  
-3. Compute predicted probabilities for:
-   - A male worker  
-   - A female worker  
-4. Write 2–3 sentences summarizing what this model says about gender and high wages.
 
----
 
-## 4. Logistic Regression With Multiple Predictors
+## 3. Logistic Regression With Multiple Predictors
 
 Fit the model:
 
-\[
+$
 \text{highwage} \sim \text{sex} + \text{age} + \text{education}
-\]
+$
 
 **Tasks**
 
