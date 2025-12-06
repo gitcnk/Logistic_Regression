@@ -12,7 +12,7 @@ Your goal: Build and interpret logistic regression models predicting whether a w
 
 **Tasks**
 
-1. Load the `Wage` dataset from **ISLR2**.
+1. Install this package **ISLR2** first. Then Use `data(Wage)` and `View(Wage)` to load and view the dataset.
 2. Create a binary outcome variable:
 
    - `highwage = 1` if wage > 250  
@@ -48,9 +48,6 @@ Your goal: Build and interpret logistic regression models predicting whether a w
 3. Comment on whether the train and test sets look similar in distribution.  Think about why might this be an important check.
 
 ---
-
-
-
 
 
 ## 3. Logistic Regression With Multiple Predictors
