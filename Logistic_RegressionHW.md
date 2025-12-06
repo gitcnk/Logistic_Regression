@@ -65,8 +65,11 @@ $\text{highwage} \sim \text{race} + \text{age} + \text{education} + \text{educat
    - A 30-year-old White with HS education  
    - A 30-year-old Black with HS education  
 4. Briefly comment on your findings. (one sentence)
-5. Compute ratio of odds for Whites and Blacks.  Interpret this value in context.
-6. Compute the change in odds for two groups of individuals who differby 5 years. Interpret this value in context.
+5. If you fit the model correctly, you'll see that the interaction term is not *statisitically significant'.  What does this mean in this context.  Don't just say that coefficient is zero, or this is a result of chance.  Relate this to education, race and the response of highwages.
+   
+6. Compute ratio of odds for Whites and Blacks. You may ingore the interaction term for this.  Interpret this value in context.
+   
+7. Compute the change in odds for two groups of individuals who differ by 5 years. Interpret this value in context.  As before, you may ingore the interaction term for this.
 
 ---
 
