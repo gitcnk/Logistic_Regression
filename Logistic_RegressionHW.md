@@ -1,10 +1,7 @@
 # Logistic Regression Homework 
 
-We will use the `Wage` dataset from the **ISLR2** package.  Please install this package first.
 
-The dataset includes a group variable `sex` (Male/Female) plus other covariates such as `age`, `education`, `race`, and `wage`.
-
-Your goal: Build and interpret logistic regression models predicting whether a worker earns a **high wage**.
+Goal: Build and interpret logistic regression models predicting whether a worker earns a **high wage**.
 
 ---
 
@@ -12,13 +9,15 @@ Your goal: Build and interpret logistic regression models predicting whether a w
 
 **Tasks**
 
-1. Install the package **ISLR2** first. Then Use `data(Wage)` and `View(Wage)` to load and view the dataset. You can get some background infor by using `help(Wage)` command.
+1. Use the following R-code to access the data:
+   `income_data = read.csv('')`
+   
 2. Create a binary outcome variable:
 
    - `highwage = 1` if wage > 250  
    - `highwage = 0` otherwise
 
-3. Print:
+2. Print:
    - First 10 rows  
    - Number of rows and columns  
    - The number of males and females  
