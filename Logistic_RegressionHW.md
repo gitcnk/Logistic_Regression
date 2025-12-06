@@ -10,21 +10,23 @@ Goal: Build and interpret logistic regression models predicting whether a worker
 **Tasks**
 
 1. Use the following R-code to access the data:
-   `income_data = read.csv('')`
+   `income_data = read.csv('https://raw.githubusercontent.com/gitcnk/Data/refs/heads/master/Stat254/Income_data.csv')
+`
    
 2. Create a binary outcome variable:
 
-   - `highwage = 1` if wage > 250  
+   - `highwage = 1` if income > 50K  
    - `highwage = 0` otherwise
 
 2. Print:
    - First 10 rows  
    - Number of rows and columns  
-   - The number of males and females  
+   - The number of males and females
+   - The number of White and Black employees  
 
 4. Compute:
-   - Mean of `highwage` for males  
-   - Mean of `highwage` for females  
+   - Proportion of `highwage` for Whites  
+   - Proportion of `highwage` for Blacks    
    - Write a sentence comparing the two groups.
 
 5. Make these plots:
@@ -53,16 +55,16 @@ Goal: Build and interpret logistic regression models predicting whether a worker
 
 Fit the model:
 
-$\text{highwage} \sim \text{sex} + \text{age} + \text{education}$
+$\text{highwage} \sim \text{race} + \text{age} + \text{education}$
 
 **Tasks**
 
 1. Fit the model using training data.
-2. Write down the fitted model for males and females separately.
+2. Write down the fitted model for Whites and Blacks separately.
 
 3. Compute predicted probabilities for:
-   - A 30-year-old male with HS education  
-   - A 30-year-old female with HS education  
+   - A 30-year-old White with HS education  
+   - A 30-year-old Black with HS education  
 4. Briefly comment on your findings. (one sentence)
 
 ---
@@ -72,7 +74,7 @@ $\text{highwage} \sim \text{sex} + \text{age} + \text{education}$
 **Tasks**
 
 1. Compute predicted probabilities for the **test set**.
-2. Convert these probabilities into predicted classes using a threshold of **0.5**.
+2. Convert these probabilities into predicted classes (highwage or not) using a threshold of **0.5**.
 3. Create our famous 'going-to-the-beach' table!
 
 **Congratulations!**  You just finished the last HW for the semeseter!
