@@ -19,8 +19,7 @@ Goal: Build and interpret logistic regression models predicting whether a worker
    - `highwage = 0` otherwise
 
 2. Print:
-   - First 10 rows  
-   - Number of rows and columns  
+
    - The number of males and females
    - The number of White and Black employees  
 
@@ -32,7 +31,7 @@ Goal: Build and interpret logistic regression models predicting whether a worker
 5. Make these plots:
    - A scatterplot of `highwage`(Y) and `education`(X).
    - Add the fitted logistic curve into this plot.
-   - Now modify the plot to incorporate the `sex` variable.  Your plot should now have two curves representing the two genders.
+   - Now modify the plot to incorporate the `race` variable.  Your plot should now have two curves representing the two races.
    
 
 
@@ -55,7 +54,7 @@ Goal: Build and interpret logistic regression models predicting whether a worker
 
 Fit the model:
 
-$\text{highwage} \sim \text{race} + \text{age} + \text{education}$
+$\text{highwage} \sim \text{race} + \text{age} + \text{education} + \text{education}*\text{race}$
 
 **Tasks**
 
@@ -66,6 +65,8 @@ $\text{highwage} \sim \text{race} + \text{age} + \text{education}$
    - A 30-year-old White with HS education  
    - A 30-year-old Black with HS education  
 4. Briefly comment on your findings. (one sentence)
+5. Compute ratio of odds for Whites and Blacks.  Interpret this value in context.
+6. Compute the change in odds for two groups of individuals who differby 5 years. Interpret this value in context.
 
 ---
 
