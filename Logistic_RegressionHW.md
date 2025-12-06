@@ -73,7 +73,7 @@ $\text{highwage} \sim \text{race} + \text{age} + \text{education} + \text{educat
 
 ---
 
-## 5. Model Evaluation on Test Set
+## 4. Model Evaluation on Test Set
 
 **Tasks**
 
