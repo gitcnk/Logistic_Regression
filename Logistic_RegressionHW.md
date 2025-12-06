@@ -12,7 +12,7 @@ Your goal: Build and interpret logistic regression models predicting whether a w
 
 **Tasks**
 
-1. Install the package **ISLR2** first. Then Use `data(Wage)` and `View(Wage)` to load and view the dataset.
+1. Install the package **ISLR2** first. Then Use `data(Wage)` and `View(Wage)` to load and view the dataset. You can get some background infor by using `help(Wage)` command.
 2. Create a binary outcome variable:
 
    - `highwage = 1` if wage > 250  
@@ -41,7 +41,7 @@ Your goal: Build and interpret logistic regression models predicting whether a w
 
 **Tasks**
 
-1. Use a **70% train / 30% test** split. (rougly)
+1. Use a **70% train / 30% test** split. 
 2. Report:
    - Number of observations in train and test  
    - Proportion of `highwage = 1` in train and test  
@@ -64,7 +64,7 @@ $\text{highwage} \sim \text{sex} + \text{age} + \text{education}$
 3. Compute predicted probabilities for:
    - A 30-year-old male with HS education  
    - A 30-year-old female with HS education  
-   Write a short comparison.
+4. Briefly comment on your findings. (one sentence)
 
 ---
 
