@@ -58,7 +58,7 @@ $\text{highwage} \sim \text{race} + \text{age} + \text{education} + \text{educat
 
 **Tasks**
 
-1. Fit the model using training data. *Please use the numerical variable of education not the edication category.*
+1. Fit the model using training data. *Please use the numerical variable of education not the education category.*
 2. Write down the fitted model for Whites and Blacks separately.
 
 3. Compute predicted probabilities for:
