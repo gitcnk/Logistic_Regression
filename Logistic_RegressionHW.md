@@ -29,7 +29,10 @@ Your goal: Build and interpret logistic regression models predicting whether a w
    - Write a sentence comparing the two groups.
 
 5. Make these plots:
-   - A scatterplot of `highwage`(Y) and `education`(X) colored by sex.  
+   - A scatterplot of `highwage`(Y) and `education`(X).
+   - Add the fitted logistic curve into this plot.
+   - Now modify the plot to incorporate the `sex` variable into the plot.  You should have two curves representing the two genders.
+   
 
 
 ---
@@ -38,11 +41,11 @@ Your goal: Build and interpret logistic regression models predicting whether a w
 
 **Tasks**
 
-1. Use a **80% train / 20% test** split.
+1. Use a **70% train / 30% test** split. (rougly)
 2. Report:
    - Number of observations in train and test  
    - Proportion of `highwage = 1` in train and test  
-3. Comment on whether the train and test sets look similar in distribution.
+3. Comment on whether the train and test sets look similar in distribution.  Think about why might this be an important check.
 
 ---
 
@@ -61,7 +64,7 @@ $\text{highwage} \sim \text{sex} + \text{age} + \text{education}$
 1. Fit the model using training data.
 2. Write down the fitted model for males and females separately.
 
-4. Compute predicted probabilities for:
+3. Compute predicted probabilities for:
    - A 30-year-old male with HS education  
    - A 30-year-old female with HS education  
    Write a short comparison.
@@ -74,54 +77,6 @@ $\text{highwage} \sim \text{sex} + \text{age} + \text{education}$
 
 1. Compute predicted probabilities for the **test set**.
 2. Convert these probabilities into predicted classes using a threshold of **0.5**.
-3. Create a confusion matrix.
-4. Compute:
-   - Accuracy  
-   - Sensitivity  
-   - Specificity  
-5. Compute and report the ROC AUC.
-6. Write 2–3 sentences on how well the model performs.
+3. Create our famous 'going-to-the-beach' table!
 
 ---
-
-## 6. Odds Ratio for a 10-Year Age Increase
-
-From the multivariable model, let the coefficient for `age` be \(\beta\).
-
-The odds ratio for a 10-year increase is:
-
-\[
-e^{10\beta}
-\]
-
-**Tasks**
-
-1. Derive this step-by-step:
-   - Change in log-odds  
-   - Convert to odds  
-   - Exponentiate  
-2. Compute the numerical value.
-3. Interpret in plain English.
-
----
-
-## 7. (Optional Bonus)
-
-Fit a model with an interaction:
-
-\[
-\text{highwage} \sim \text{sex} * \text{education}
-\]
-
-**Tasks**
-
-1. Fit the interaction model.
-2. Interpret whether education affects males and females differently.
-3. Compare AIC of this model with the earlier multivariable model.
-4. Write 2–3 sentences about whether the interaction is useful.
-
----
-
-## End of Homework
-
-
