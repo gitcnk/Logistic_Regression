@@ -1,6 +1,7 @@
-# Logistic Regression Homework (Using Sex as Group Variable)
+# Logistic Regression Homework 
 
-We will use the `Wage` dataset from the **ISLR2** package.  
+We will use the `Wage` dataset from the **ISLR2** package.  Please install this package first.
+
 The dataset includes a group variable `sex` (Male/Female) plus other covariates such as `age`, `education`, `race`, and `wage`.
 
 Your goal: Build and interpret logistic regression models predicting whether a worker earns a **high wage**.
@@ -25,11 +26,11 @@ Your goal: Build and interpret logistic regression models predicting whether a w
 4. Compute:
    - Mean of `highwage` for males  
    - Mean of `highwage` for females  
-   - Write 2–3 sentences comparing the two groups.
+   - Write a sentence comparing the two groups.
 
 5. Make these plots:
-   - Boxplot of wage by sex  
-   - Histogram of age (colored by sex)
+   - A scatterplot of `highwage`(Y) and `education`(X) colored by sex.  
+
 
 ---
 
@@ -37,7 +38,7 @@ Your goal: Build and interpret logistic regression models predicting whether a w
 
 **Tasks**
 
-1. Use a **70% train / 30% test** split.
+1. Use a **80% train / 20% test** split.
 2. Report:
    - Number of observations in train and test  
    - Proportion of `highwage = 1` in train and test  
@@ -45,13 +46,6 @@ Your goal: Build and interpret logistic regression models predicting whether a w
 
 ---
 
-## 3. Logistic Regression With Sex Only
-
-Fit the model:
-
-$
-\text{highwage} \sim \text{sex}
-$
 
 
 
@@ -60,19 +54,13 @@ $
 
 Fit the model:
 
-$
-\text{highwage} \sim \text{sex} + \text{age} + \text{education}
-$
+$\text{highwage} \sim \text{sex} + \text{age} + \text{education}$
 
 **Tasks**
 
 1. Fit the model using training data.
-2. For each predictor (sex, age, each education level), interpret:
-   - log-odds meaning  
-   - odds ratio meaning  
-3. Compare the sex coefficient between the simple model and this multivariable model:
-   - Did it shrink or grow?  
-   - Discuss potential confounding.  
+2. Write down the fitted model for males and females separately.
+
 4. Compute predicted probabilities for:
    - A 30-year-old male with HS education  
    - A 30-year-old female with HS education  
