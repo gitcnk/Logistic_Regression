@@ -1,4 +1,4 @@
-# Logistic Regression Homework 
+# Logistic Regression Homework  
 
 
 Goal: Build and interpret logistic regression models predicting whether a worker earns a **high wage**.
