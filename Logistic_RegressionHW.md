@@ -12,7 +12,7 @@ Your goal: Build and interpret logistic regression models predicting whether a w
 
 **Tasks**
 
-1. Install this package **ISLR2** first. Then Use `data(Wage)` and `View(Wage)` to load and view the dataset.
+1. Install the package **ISLR2** first. Then Use `data(Wage)` and `View(Wage)` to load and view the dataset.
 2. Create a binary outcome variable:
 
    - `highwage = 1` if wage > 250  
@@ -31,7 +31,7 @@ Your goal: Build and interpret logistic regression models predicting whether a w
 5. Make these plots:
    - A scatterplot of `highwage`(Y) and `education`(X).
    - Add the fitted logistic curve into this plot.
-   - Now modify the plot to incorporate the `sex` variable into the plot.  You should have two curves representing the two genders.
+   - Now modify the plot to incorporate the `sex` variable.  Your plot should now have two curves representing the two genders.
    
 
 
@@ -45,7 +45,7 @@ Your goal: Build and interpret logistic regression models predicting whether a w
 2. Report:
    - Number of observations in train and test  
    - Proportion of `highwage = 1` in train and test  
-3. Comment on whether the train and test sets look similar in distribution.  Think about why might this be an important check.
+3. Comment on whether the train and test sets look similar in distribution.  What is the purpose of this check?  Think carefully before answering this.
 
 ---
 
